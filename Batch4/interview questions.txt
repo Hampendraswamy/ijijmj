@@ -1,0 +1,20 @@
+﻿1. what is semantic html
+
+2. name 3 attrubtes of position properties
+
+3. what is css reset
+
+4. how do you comment in css
+
+5. is JavaScript case sensitive
+
+6. JavaScript method to convert string to integer
+
+7. what us the use to NAN function
+
+8. what are undeclared and undefined variables
+
+9. write code for adding new elements dynamically
+
+10. what are global variables? how are these variables
+     declared and problema associated with using them

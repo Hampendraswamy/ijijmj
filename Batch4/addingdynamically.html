@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Hai </title>
+   <style type="text/css">
+     #demo,#demo2{
+      margin-top: 10px;
+     }
+   </style>
+ </head>
+ <body>
+  <div id="demo">Enter First name
+  <input type="text" name="input" value="">
+  Enter last Name
+  <input type="text" name="input">
+  Enter Address
+  <input type="text" name="input">
+  <div  id="demo2"></div>
+  </div>
+  <table  id=demo1>
+ </table>
+
+ <button onclick="hai()"name="">ADD</button> 
+ 
+ 
+ <script type="text/javascript">
+   function hai(){
+    var doo=document.getElementById('demo2');
+    
+    var fname=document.createElement("span");
+    fname.textContent="Enter First Name";
+    doo.appendChild(fname);
+    var fname1=document.createElement('input');
+    doo.appendChild(fname1);
+    
+     var lname=document.createElement("span");
+     lname.textContent="Enter last Name";
+     doo.appendChild(lname);
+     var lname1=document.createElement("input");
+     doo.appendChild(lname1);
+
+     var adress=document.createElement("span");
+     adress.textContent="Enter adress";
+     doo.appendChild(adress)
+     var adress1=document.createElement("input");
+     doo.appendChild(adress1);
+     
+       }
+ </script>
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<html>
+  <body>
+    <button onclick="create()">add new element</button>
+    <script>
+      function create() {
+        var add = document.createElement('h3');
+        add.textContent = "adding New element";
+        document.body.appendChild(add);
+      }
+    </script>
+  </body>
+</html>
+ -->

@@ -1,0 +1,52 @@
+<script type="text/javascript">
+
+	function hoist() {
+  a = 20;
+ var b = 100;
+}
+
+hoist();
+
+console.log(a); 
+
+
+console.log(b); 
+	
+// 	function personalinfo( name, age) {
+// 		this.name1=name;
+// 		this.age1=age;
+// 	}
+	
+// 	var pinfo=new personalinfo( "swamy",25)
+
+// 	function workinfo(company,ID){
+// 		this.company1=company;
+// 		this.ID1=ID;
+// 	}
+
+// 	var winfo=new workinfo("infosys",121)
+
+
+// 	workinfo.prototype.salary=25000;
+// 	workinfo.prototype=pinfo;
+// 	var Fullinfo=new workinfo();
+// 	console.log(Fullinfo);
+// 	console.log(Fullinfo instanceof personalInfo)
+// </script>
+
+// <script>
+// function personalInfo() {
+// this.name="abc";
+// this.address="Banglore";
+//     }
+// function work_info() {
+// this.company="xyz";
+// this.id=121;
+//     }
+// var obj1=new personalInfo();
+// work_info.prototype=obj1;
+// var obj2=new work_info();
+// console.log(obj2.name+" "+obj2.address)
+// console.log(obj1 instanceof personalInfo)
+// console.log(work_info.hasOwnProperty('company'))
+</script>

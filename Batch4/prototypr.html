@@ -1,0 +1,38 @@
+<script type="text/javascript">
+	var obj={name:"swamy",age:25,salary:25000};
+
+	console.log(obj);
+
+
+	var obj1=new Object()
+	obj1.name="swamy";
+	obj1.company="HCL"
+	obj1.age=25;
+	obj1.salary=25000;
+
+	console.log(obj1);
+
+
+	function obj2(name,age,salary) {
+		this.name1=name;
+		this.age1=age;
+		this.salary1=age;
+	}
+	var obj3=new obj2("Hampendra",25,25000);
+	console.log(obj3);
+
+
+
+	obj2.prototype.company="Infosys";
+	Object.prototype.idy=123;
+
+
+
+	obj2.prototype.show=(function(){ 
+		alert("Hi this is a show function");
+
+		 })();
+
+	console.log(obj1.company);
+
+</script>

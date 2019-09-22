@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hai</title>
+	<script type="text/javascript">
+		function myfun(){
+			var days=document.getElementById("demo")
+			switch(days){
+				case '1':document.write("mon") break;
+				case "2":document.write("tue") break;
+				case "3":document.write("wed") break;
+				case "4":document.write("thu") break;
+				case "5":document.write("fri") break;
+				case "6":document.write("sat") break;
+				case "0":document.write("sun") break;
+				default:document.write("not found") break;
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="number" name=" d " id="demo" oninput="myfun()">
+
+</body>
+</html>

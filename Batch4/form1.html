@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HAi 16</title>
+	<!-- <style type="text/css">
+		table{
+			border:2px dashed gray;
+			border-spacing: 10px;
+			border-style: 
+			margin: 100px;
+		}
+		form{
+			color:green;
+			background-color:aqua;
+		}
+		input{
+			color: white;
+			background-color: pink;
+		}
+	</style> -->
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	
+</head>
+<body>
+	<form class="form" autocomplete="off" method="get" width="50%" target="_blank">
+		<fieldset><legend>Application form</legend>
+			<dialog open>this is a dialog window</dialog>
+			<!-- <details><summary>Enter data</summary> -->
+		<table class="table">
+			<tr>
+				<td>Enter First Name:</td>
+				<td><input class="input" type="text" name="firstName" id="demo" required minlength="3" firstName()></td>
+			</tr>
+			<tr>
+				<td>Enter Last Name:</td>
+				<td><input class="input" type="text" name="lastName" id="demo1"required minlength="3"></td>
+			</tr>
+			<tr>
+				<td>DOB:</td>
+				<td><input class="input" type="date" name="date" id="demo2"required></td>
+			</tr>
+			<tr>
+				<td>Gendor:</td>
+				<td><input class="input" type="radio" name="Gendor" required>Male</td>
+				<td><input class="input" type="radio" name="Gendor" required>FeMale</td>
+			</tr>
+			<tr><td>Select Course</td>
+				<td>
+				<select  class="input" name="Courses" required placeholder="select">
+					<option></option>
+					<option>BE</option>
+					<option>Bsc</option>
+					<option>BCA</option>
+					<option>BA</option>
+					<option>Architecture</option>
+				</select>
+			</td>
+			</tr>
+			<tr>
+				<td>Phone number:</td>
+				<td><input class="input" type="tel" minlength="10" maxlength="10" name="" id="demo3" oninput="phone()" required></td>
+			</tr>
+			<tr>
+				<td>Enter E-Mail ID</td>
+				<td><input class="input" type="email" name="mail" required></td>
+			</tr>
+			<tr>
+				<td><input class="input" type="checkbox" name="check" required>i agreed</td>
+			</tr>
+			<tr>
+				<td><input class="input" type="submit" name="submit" required></td>
+			</tr>
+		</table></fieldset></details>
+	</form>
+
+
+	<p id='dem' > </p>
+	<script type="text/javascript">
+		function firstName() {
+			var fname=document.getElementById('demo').value;
+			var fname1=fname.style.textTransform="uppercase"
+
+			document.getElementById('dem').innerHTML=""
+
+		}
+
+		function phone() {
+			 var x, text;
+
+			if (isNaN(x)) {
+				text = "Input not valid";
+			} else {
+    			text = "Input OK";
+  			}
+  			document.getElementById("demo3").innerHTML = text;
+		}
+		
+	</script>
+
+</body>
+</html>

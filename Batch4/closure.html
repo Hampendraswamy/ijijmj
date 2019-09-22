@@ -1,0 +1,33 @@
+<script type="text/javascript">
+	var a=20;
+
+	function outer(b,c) {
+		var d=20;
+		function inner(e,f) {
+			var g=10;
+			function inner1(h,i) {
+				return a+b+c+d+e+f+g+h+i;
+			}
+
+			return inner1
+
+		}
+		
+		return inner;
+	}
+	console.log(outer(10,20)(10,20)(4,2))
+	
+	function hoist() {
+  a = 20;
+ var b = 100;
+}
+
+hoist();
+
+console.log(a); 
+
+
+console.log(b); 
+	
+
+</script>

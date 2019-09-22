@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HAiiii</title>
+</head>
+<body>
+	 <img src="E:\old memory\IMG0026B.jpg" id="demo" width="200" height="200" ><br>
+	 <canvas id="demo1" width="300" height="300"style="border:2px solid black">
+	 </canvas><br>
+	 <button onclick="myfun()" id="demo2">click</button>
+	 
+	 	<script type="text/javascript">
+	 
+	 		function myfun(){
+	 		
+	 		var img=document.getElementById("demo");
+	 		var b=document.getElementById("demo1");
+	 		var ctx=b.getContext("2d");
+	 
+	 		ctx.drawImage(img,70,50);
+	 	}
+	 	// function hide(){
+	 		// document.getElementById("demo").style.display="none";
+	 	// }
+	 	</script>
+</body>
+</html>

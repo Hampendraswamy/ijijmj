@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HAi 00</title>
+</head>
+<body>
+	<p id="mode"></p>
+	<script type="text/javascript">
+		var OTP=0;
+	
+		setInterval(function(){
+			OTP=Math.floor(Math.random()*10000);
+			document.getElementById("mode").innerHTML=OTP
+		},2000);
+
+	</script>
+
+</body>
+</html>

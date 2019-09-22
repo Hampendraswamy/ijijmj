@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HAi</title>
+</head>
+<body>
+	<input type="number"  placeholder="enter your age" oninput="disp()">
+	<button type="button" id="demo" oninput="disp()">submit</button>
+
+	 <script type="text/javascript">
+			function disp(age){
+				if(age>=18){
+					if(age<=30){
+					 // document.write("applicable")
+
+					 document.getElementById('demo').innerHTML="applicable"
+					}
+					else{
+					 // document.write("not applicable")
+					 document.getElementById('demo').innerHTML=" not applicable"
+					}
+				}else{
+					 // document.write("not eligible")
+					 document.getElementById('demo').innerHTML="not eligible"
+				}
+			}
+	</script>
+
+</body>
+</html>

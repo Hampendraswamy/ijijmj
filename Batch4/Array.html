@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HAi 14</title>
+</head>
+<body>
+	<p id="HAi"></p>
+	<script type="text/javascript">
+		var car=["BMW","Hundai","Honda","Benz","Lamborgini"];
+		var first=car[0]
+		var last=car.length
+		var i=0
+		car[2]="Suzuki"
+		console.log(car[1]);
+		document.getElementById('HAi').innerHTML=car[4];
+		document.write(car[2]);
+		document.write(car);
+		document.write(car.length);
+		document.write(first)
+		document.write(last);
+		text="<ul>"
+		for (var i = last; i >= 0; i--) {
+			text+="<li>"+car[i]+"</li>"
+		}
+		document.write(text)
+
+		car.forEach(cars);
+		text+="</ul>"
+
+		function cars(value){
+		text+="<li>"+value+"</li>"
+	}
+	document.write(text);
+	</script>
+
+</body>
+</html>

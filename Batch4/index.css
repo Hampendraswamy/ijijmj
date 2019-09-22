@@ -1,0 +1,30 @@
+ 
+		.sss{
+			color:purple;
+		}
+		#HFF{
+			color:orange;
+		}
+
+		.table{
+			border:2px dashed gray;
+			border-spacing: 10px;
+			border-style: 
+			margin: 100px;
+		}
+		.form{
+			color:green;
+			background-color:aqua;
+		}
+		.input{
+			color: white;
+			background-color: pink;
+		}
+
+
+		@media screen and (max-width:600px){
+			.table,.form,.input{
+				width: 100%
+			}
+
+		}
